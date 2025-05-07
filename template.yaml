@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Wibix DevOps Internship POC - EC2 and S3"
+
+Resources:
+  DevOpsInternBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "wibix-intern-bucket-${AWS::AccountId}-${AWS::Region}"
+      Tags:
+        - Key: Name
+          Value: WibixDevOpsS3
+
+  DevOpsInternEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-062f0cc54dbfd8ef1
+      Tags:
+        - Key: Name
+          Value: WibixDevOpsEC2

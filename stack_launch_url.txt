@@ -1,0 +1,1 @@
+https://console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://wibix-devops-ahsaan-8898.s3.ap-south-1.amazonaws.com/template.yaml
